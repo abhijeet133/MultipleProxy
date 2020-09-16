@@ -25,11 +25,9 @@
     <modules>
         <module>../mavenplugintest</module>
         <module>../mavenplugintest2</module>
-        <module>../DemoQuota</module>
     </modules>
     
-    
-     
+  
     <!-- This is where you add the environment specific properties under various profile names -->
     <profiles>
         <profile>
