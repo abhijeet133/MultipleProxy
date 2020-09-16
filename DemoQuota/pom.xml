@@ -1,24 +1,23 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-           xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-      <parent>
-          <artifactId>parent-pom</artifactId>
-          <groupId>apigee</groupId>
-          <version>1.0</version>
-          <relativePath>../parent-pom/pom.xml</relativePath>
-      </parent>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>parent-pom</artifactId>
+        <groupId>apigee</groupId>
+        <version>1.0</version>
+        <relativePath>../parent-pom/pom.xml</relativePath>
+    </parent>
 
-      <modelVersion>4.0.0</modelVersion>
-      <groupId>apigee</groupId>
-      <artifactId>DemoQuota</artifactId>
-      <version>1.0</version>
-      <name>DemoQuota</name>
-      <packaging>pom</packaging>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>apigee</groupId>
+    <artifactId>DemoQuota</artifactId>
+    <version>1.0</version>
+    <name>DemoQuota</name>
+    <packaging>pom</packaging>
 
-      <properties>
+    <properties>
             <main.basedir>${project.basedir}</main.basedir>
     </properties>
-    
-    
+
     <build>
         <plugins>
             <plugin>
@@ -69,10 +68,8 @@
                         </goals>
                     </execution>
                 </executions>
-                <configuration>
-					<skip>true</skip>
-				</configuration>
             </plugin>
         </plugins>
     </build>
+
 </project>
