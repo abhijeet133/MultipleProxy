@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>apigee</groupId>
+    <artifactId>parent-pom</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0</version>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>central</id>
+            <name>Maven Plugin Repository</name>
+            <url>http://repo1.maven.org/maven2</url>
+            <layout>default</layout>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <releases>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+        </pluginRepository>
+        
+    </pluginRepositories>
+     
+
+    <modules>
+        <module>../mavenplugintest</module>
+        <module>../mavenplugintest2</module>
+    </modules>
+    
+    
+     
+    <!-- This is where you add the environment specific properties under various profile names -->
+    <profiles>
+        <profile>
+            <id>test</id>
+            <properties>
+                <org>demo34</org> 
+                <apigee.profile>test</apigee.profile>
+                <apigee.hosturl>https://api.enterprise.apigee.com</apigee.hosturl>
+                <apigee.apiversion>v1</apigee.apiversion>
+                <!-- value of version in  https://api.enterprise.apigee.com/v2 -->
+                <apigee.org>${org}</apigee.org>
+                <apigee.username>${username}</apigee.username>
+                <apigee.password>${password}</apigee.password>
+            </properties>
+        </profile>
+        <profile>
+            <id>prod</id>
+            <properties>
+                <org>demo34</org> 
+                <apigee.profile>prod</apigee.profile>
+                <apigee.hosturl>https://api.enterprise.apigee.com</apigee.hosturl>
+                <apigee.apiversion>v1</apigee.apiversion>
+                <!-- value of version in  https://api.enterprise.apigee.com/v2 -->
+                <apigee.org>${org}</apigee.org>
+                <apigee.username>${username}</apigee.username>
+                <apigee.password>${password}</apigee.password>
+            </properties>
+        </profile>
+    </profiles>
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.8.2</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>
