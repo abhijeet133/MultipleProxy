@@ -25,6 +25,7 @@
     <modules>
         <module>../mavenplugintest</module>
         <module>../mavenplugintest2</module>
+        <module>../DemoQuota</module>
     </modules>
     
   
