@@ -92,9 +92,9 @@
             </goals>
             <configuration>
               <executable>npm</executable>
-              <arguments>
-		<argument>install</argument>
-	     </arguments>
+              <commandlineArgs>
+                install
+              </commandlineArgs>
             </configuration>
           </execution> 
           
@@ -106,7 +106,11 @@
               <goal>exec</goal>
             </goals>
             <configuration>
-              <executable>newman run --disable-unicode DemoQuota/New.postman_collection.json</executable>
+		    <executable>node_modules/newman/bin/newman.js</executable>
+              <commandlineArgs>
+                run DemoQuota/New.postman_collection.json -e DemoQuota/New.postman_collection.json
+              </commandlineArgs>
+              
 		   
 		
 	    </configuration>
