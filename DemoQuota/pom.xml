@@ -106,9 +106,9 @@
               <goal>exec</goal>
             </goals>
             <configuration>
-              <executable>node_modules/newman/bin/newman.js</executable>
+              <executable>npm</executable>
 		    <arguments>
-			    <argument> run DemoQuota/New.postman_collection.json -e DemoQuota/New.postman_collection.json</argument>
+			    <argument>newman run --disable-unicode DemoQuota/New.postman_collection.json</argument>
 	    	 </arguments>
               
             </configuration>
