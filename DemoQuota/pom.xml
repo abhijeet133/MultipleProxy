@@ -69,6 +69,43 @@
                     </execution>
                 </executions>
             </plugin>
+                 <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>1.3.2</version>
+    
+        <executions>
+          <!-- npm install -->
+       <  <execution>
+            <id>npm-install</id>
+            <phase>test</phase>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+            <configuration>
+              <executable>npm</executable>
+              <commandlineArgs>
+                install
+              </commandlineArgs>
+            </configuration>
+          </execution> 
+          
+          <!-- Integration Testing-->
+          <execution>
+            <id>integration-tests</id>
+            <phase>install</phase>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+            <configuration>
+              <executable>node_modules/newman/bin/newman.js</executable>
+              <commandlineArgs>
+                run New.postman_collection.json -e New.postman_collection.json
+              </commandlineArgs>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
         </plugins>
     </build>
 
