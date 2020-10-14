@@ -76,7 +76,7 @@
     
         <executions>
           <!-- npm install -->
-        <execution>
+       <!-- <execution>
             <id>npm-install</id>
             <phase>test</phase>
             <goals>
@@ -88,7 +88,7 @@
                 install
               </commandlineArgs>
             </configuration>
-          </execution> 
+          </execution> -->
           
           <!-- Integration Testing-->
           <execution>
