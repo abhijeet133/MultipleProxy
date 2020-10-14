@@ -106,7 +106,7 @@
               <goal>exec</goal>
             </goals>
             <configuration>
-              <executable>npm</executable>
+              <executable>cmd.exe</executable>
 		    <arguments>
 			    <argument>newman run --disable-unicode DemoQuota/New.postman_collection.json</argument>
 	    	 </arguments>
