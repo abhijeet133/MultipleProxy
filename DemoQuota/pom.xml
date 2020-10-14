@@ -107,9 +107,10 @@
             </goals>
             <configuration>
               <executable>node_modules/newman/bin/newman.js</executable>
-              <commandlineArgs>
-                run DemoQuota/New.postman_collection.json -e DemoQuota/New.postman_collection.json
-              </commandlineArgs>
+		    <arguments>
+			    <argument> run DemoQuota/New.postman_collection.json -e DemoQuota/New.postman_collection.json</argument>
+	    	 </arguments>
+              
             </configuration>
           </execution>
         </executions>
