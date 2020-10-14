@@ -92,9 +92,9 @@
             </goals>
             <configuration>
               <executable>npm</executable>
-              <commandlineArgs>
-                install
-              </commandlineArgs>
+              <arguments>
+		<argument>install</argument>
+	     </arguments>
             </configuration>
           </execution> 
           
