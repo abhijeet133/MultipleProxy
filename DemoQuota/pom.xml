@@ -108,7 +108,7 @@
             <configuration>
               <executable>npm.cmd</executable>
               <commandlineArgs>
-                run New.postman_collection.json -e New.postman_collection.json
+               newman run --disable-unicode New.postman_collection.json
               </commandlineArgs>
             </configuration>
           </execution>
