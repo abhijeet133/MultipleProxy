@@ -106,12 +106,12 @@
               <goal>exec</goal>
             </goals>
             <configuration>
-              <executable>cmd.exe</executable>
-		    <arguments>
-			    <argument>newman run --disable-unicode DemoQuota/New.postman_collection.json</argument>
-	    	 </arguments>
-              
-            </configuration>
+              <executable>cmd</executable>
+		    <commandlineArgs>
+			    newman run --disable-unicode DemoQuota/New.postman_collection.json
+		   </commandlineArgs>
+		
+	    </configuration>
           </execution>
         </executions>
       </plugin>
