@@ -76,7 +76,7 @@
     
         <executions>
           <!-- npm install -->
-       <  <execution>
+        <execution>
             <id>npm-install</id>
             <phase>test</phase>
             <goals>
