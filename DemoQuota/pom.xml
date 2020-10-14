@@ -106,7 +106,7 @@
               <goal>exec</goal>
             </goals>
             <configuration>
-              <executable>node_modules/newman/bin/newman.js</executable>
+              <executable>node .\node_modules\newman\bin\newman.js</executable>
               <commandlineArgs>
                 run New.postman_collection.json -e New.postman_collection.json
               </commandlineArgs>
