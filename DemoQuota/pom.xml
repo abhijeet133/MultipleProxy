@@ -108,7 +108,7 @@
             <configuration>
               <executable>npm.cmd</executable>
               <commandlineArgs>
-               npm.cmd newman run DemoQuota/New.postman_collection.json
+               newman run DemoQuota/New.postman_collection.json
               </commandlineArgs>
             </configuration>
           </execution>
